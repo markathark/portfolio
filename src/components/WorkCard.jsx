@@ -16,7 +16,7 @@ const Card = styled.div`
   width: 100%;
   margin: 7vh 0;
   height: 400px;
-  column-gap: 5vw;
+  column-gap: 4vw;
   &.flip {
     flex-direction: row-reverse;
   }
@@ -103,7 +103,7 @@ const Links = styled.span`
 `;
 
 const PageLinks = styled.span`
-  margin: 0 15px 0 0;
+  margin: 0 12px 0 0;
   color: green;
   font-size: 1rem;
   display: inline-block;

@@ -105,7 +105,7 @@ const Links = styled.span`
 const PageLinks = styled.span`
   margin: 0 20px 0 0;
   color: green;
-  font-size: 1.3rem;
+  font-size: 1rem;
   display: inline-block;
   margin-bottom: 10px;
   transform: none;

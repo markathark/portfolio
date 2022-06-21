@@ -46,7 +46,7 @@ const About = () => {
             </Page>
             <Page>
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/markathark"
                 target="_blank"
                 rel="noreferrer"
               >

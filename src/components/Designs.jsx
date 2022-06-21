@@ -28,7 +28,7 @@ const Title = styled.div`
 const Designs = () => {
   return (
     <DesignWrapper>
-      <Title>Design Projects [8]</Title>
+      <Title>Design Projects [6]</Title>
       {DesignList.map((d, i) => (
         <DesignCard
           url={d.url}

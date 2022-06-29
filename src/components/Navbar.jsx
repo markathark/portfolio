@@ -108,9 +108,9 @@ const Navbar = () => {
           </a>
         </MenuLink>
         <MenuLink>
-          <a href="/about">
+          <Link to="/about">
             <Page>About</Page>
-          </a>
+          </Link>
         </MenuLink>
         <MenuLink className="resume">
           <a href={Resume} target="_blank" rel="noreferrer">

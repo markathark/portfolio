@@ -24,7 +24,7 @@ const Whatch = () => {
           <Links>
             <Page>
               <a
-                href="https://github.com/markathark/thedailymind"
+                href="https://github.com/markathark/whatch"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -33,7 +33,7 @@ const Whatch = () => {
             </Page>
             <Page>
               <a
-                href="https://sweetist-app.herokuapp.com/"
+                href="https://whatch-app.herokuapp.com/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -46,7 +46,14 @@ const Whatch = () => {
           Whatch is web app to search for a movie or tv show to watch! Users can
           look around popular shows, and even search for a movie or tv show and
           read more about them. <br />
-          <br />I utilized a Movie API, React and SCSS to create the website.
+          <br />
+          <ul>
+            <li>
+              Parsed data from a Movie/TV API and designed a front-end to allow
+              users to search for movies or tv shows, browse popular shows, and
+              read more details
+            </li>
+          </ul>
         </Desc>
         <Skills>
           <List>
@@ -57,7 +64,7 @@ const Whatch = () => {
           </List>
           <List>
             <li>Tools</li>
-            <li>Tools</li>
+
             <li>HTML, SCSS, JS</li>
             <li>Heroku</li>
             <li>VSCode</li>

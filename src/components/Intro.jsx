@@ -57,8 +57,9 @@ const Intro = () => {
       exit={{ transition: { duration: 0.2 }, y: "-30%", opacity: 0 }}
     >
       <Welcome>
-        Mark Ariola is a web developer with a design background. He is focused
-        on creating visual designs that delivers intuitive user experiences.
+        Hello, I'm Mark Ariola — a web developer with a design background,
+        passionate about creating innovative applications that deliver intuitive
+        experiences.
       </Welcome>
     </Wrapper>
   );

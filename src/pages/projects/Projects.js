@@ -7,18 +7,16 @@ import Whatch from "../../components/images/whatch/whatch-web.png";
 const Projects = [
   {
     num: "01",
-    title: "Sweetist",
+    title: "Ecommerce Website — Sweetist",
     desc: "Created a website for sweetist which is an online sweets and art ecommerce store and spearheaded the design of the brand.",
     cats: [
       "React",
       "Redux",
-      "Mongoose",
+      "MongoDB",
       "Express",
       "Node",
-      "eCommerce",
       "Heroku",
-      "Stripe",
-      "Full Stack",
+      "Stripejs",
     ],
     flip: true,
     links: [
@@ -30,18 +28,9 @@ const Projects = [
   },
   {
     num: "02",
-    title: "MyAdvice",
+    title: "Open Platform Blog - MyAdvice",
     desc: "MyAdvice is a blog/post web app, where anyone can share advice but posting, and also read and interact with others.",
-    cats: [
-      "React",
-      "Context",
-      "Mongoose",
-      "Express",
-      "Node",
-      "MongoDB",
-      "Blog",
-      "Full Stack",
-    ],
+    cats: ["React", "Context", "MongoDB", "Express", "Node"],
     links: [
       "https://myadvice-app.herokuapp.com/",
       "https://github.com/markathark/myadvice",
@@ -51,15 +40,15 @@ const Projects = [
   },
   {
     num: "03",
-    title: "Pho Xic Lo",
+    title: "Food Ordering Website - Pho Xic Lo",
     desc: "Pho Xic Lo is a Vietnamese Restaurant, and I created a website to showcase their menu, and allow customers to order online.",
     cats: [
-      "Next.js",
+      "Nextjs",
       "Redux",
-      "Mongoose",
+      "MongoDB",
       "Express",
-      "Node.js",
-      "PayPal",
+      "Nodejs",
+      "PayPaljs",
       "Vercel",
     ],
     flip: true,
@@ -72,9 +61,9 @@ const Projects = [
   },
   {
     num: "04",
-    title: "The Daily Mind",
+    title: "Productivity App - The Daily Mind",
     desc: "The daily mind is a web app to keep track of and organize the recurring activities and data of our lives.",
-    cats: ["React", "Web App", "Heroku"],
+    cats: ["React", "CSS", "Nodejs", "Heroku", "Draggable"],
     links: [
       "http://thedailymind-app.herokuapp.com/",
       "https://github.com/markathark/thedailymind",
@@ -85,9 +74,9 @@ const Projects = [
 
   {
     num: "05",
-    title: "Whatch",
+    title: "Movie API Project - Whatch",
     desc: "Whatch is a web app utilizing an external movie and tv show api for browsing and seeing what to watch.",
-    cats: ["Movie API", "React", "SCSS", "Swiperjs"],
+    cats: ["React", "SCSS", "Swiperjs", "Heroku"],
     links: [
       "https://whatch-app.herokuapp.com/",
       "https://github.com/markathark/whatch",

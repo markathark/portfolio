@@ -17,16 +17,21 @@ const Card = styled.div`
   margin: 7vh 0;
   height: 400px;
   column-gap: 4vw;
+  transition: 0.5s;
+  padding: 20px;
   &.flip {
     flex-direction: row-reverse;
   }
+  &:hover {
+  }
   &:hover img {
-    transition: 20s;
+    transform: scale(1.05);
+    transition: object-position 20s, transform 1s;
     object-position: bottom;
   }
   @media (max-width: 768px) {
     flex-direction: column-reverse;
-    height: 60vh;
+    height: auto;
     margin: 4vh 0;
     img {
     }
@@ -56,7 +61,7 @@ const Image = styled.img`
   height: 100%;
   object-position: top;
   border: 0.5px solid #ededed;
-  transition: 3s;
+  transition: 1s;
 `;
 
 const Info = styled(motion.div)`
@@ -64,35 +69,50 @@ const Info = styled(motion.div)`
   flex: 1;
   height: 100%;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   justify-content: center;
-  &.flip {
-    align-items: flex-end;
-    text-align: right;
-  }
+
   @media (max-width: 768px) {
     align-items: center;
     text-align: center;
     flex: 0;
-    &.flip {
-      align-items: center;
-      text-align: center;
-    }
   }
 `;
 
-const Number = styled.span`
-  font-weight: 500;
+const Cats = styled.span`
+  list-style: none;
+  width: 80%;
+  padding: 0;
+  & li {
+    margin: 0 7px 3px 0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    display: inline-block;
+    background: black;
+    padding: 3px;
+  }
   @media (max-width: 768px) {
     display: none;
   }
 `;
+
 const Title = styled.div`
-  font-size: 2rem;
-  margin: 50px 0 5px 0;
+  font-size: 1.3rem;
+  margin: 20px 0 0 0;
   position: relative;
+  font-weight: normal;
   @media (max-width: 768px) {
     margin: 25px 0 0 0;
+  }
+`;
+
+const Desc = styled.span`
+  margin: 15px 0;
+  font-size: 1rem;
+  @media (max-width: 768px) {
+    margin: 20px 0;
   }
 `;
 
@@ -103,19 +123,17 @@ const Links = styled.span`
 `;
 
 const PageLinks = styled.span`
-  margin: 0 12px 0 0;
+  margin: 0 6px;
   color: green;
   font-size: 1rem;
   display: inline-block;
   margin-bottom: 10px;
   transform: none;
   transition: 1s;
+  text-align: center;
   span {
     display: inline-block;
     transform: translateY(3px);
-  }
-  &.flip {
-    margin: 0 0 0 20px;
   }
   &:after {
     content: "";
@@ -135,30 +153,9 @@ const PageLinks = styled.span`
     transform: translateY(-5px);
   }
 `;
-const Desc = styled.span`
-  margin: 50px 0;
-  font-size: 1rem;
-  @media (max-width: 768px) {
-    margin: 20px 0;
-  }
-`;
-
-const Cats = styled.span`
-  margin: 0 10px 0 0;
-  color: lightgray;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  display: inline-block;
-  &.flip {
-    margin: 0 0 0 10px;
-  }
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
 
 const WorkCard = (props) => {
-  const { ref, inView } = useInView({ threshold: 0.3 });
+  const { ref, inView } = useInView({ threshold: 0.5 });
   const animation = useAnimation();
 
   useEffect(() => {
@@ -179,17 +176,17 @@ const WorkCard = (props) => {
 
   return (
     <Card ref={ref} className={props.flip ? "flip" : null}>
-      <Info animate={animation} className={props.flip ? "flip" : null}>
-        <Number>{props.num}</Number>
-        <Title>{props.title}</Title>
-        <div>
+      <Info className={props.flip ? "flip" : null} animate={animation}>
+        <Cats>
           {props.cats.map((c) => (
-            <Cats key={c} className={props.flip ? "flip" : null}>
+            <li key={c} className={props.flip ? "flip" : null}>
               {c}
-            </Cats>
+            </li>
           ))}
-        </div>
+        </Cats>
+        <Title>{props.title}</Title>
         <Desc>{props.desc} </Desc>
+
         <Links>
           <a href={props.links[0]} target="_blank" rel="noreferrer">
             <PageLinks className={props.flip ? "flip" : null}>
@@ -218,7 +215,7 @@ const WorkCard = (props) => {
         </Links>
       </Info>
       <Page href={props.links[0]} target="_blank" rel="noreferrer">
-        <Image src={props.img} />
+        <Image src={props.img} animate={animation} />
       </Page>
     </Card>
   );

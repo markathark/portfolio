@@ -43,13 +43,20 @@ const Sweetist = () => {
           </Links>
           <br />
           <br />
-          Sweetist is an eCommerce focused on selling baked goods and art
-          prints. I developed and designed the web design and interface for the
-          online store using the MERN Stack.
+          Sweetist is an ecommerce website focused on selling baked goods and
+          art prints.
           <br />
-          <br />I developed the front end with React (create-react-app) and
-          Redux, and stored the backend on MongoDB using NodeJS, Express and
-          Mongoose.
+          <br />
+          <ul>
+            <li>
+              Built a responsive front-end with React and Redux to manage user
+              and cart states, and allow users to browse and purchase products
+            </li>
+            <li>
+              Developed REST API’s to manage data from users, products, and
+              orders
+            </li>
+          </ul>
         </Desc>
         <Skills>
           <List>

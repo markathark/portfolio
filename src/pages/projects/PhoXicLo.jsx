@@ -19,7 +19,7 @@ import Pho3 from "../../components/images/phoxiclo/phoxiclo_3.png";
 const PhoXicLo = () => {
   return (
     <Wrapper>
-      <Banner title="Pho Xic Lo" image={PhoWeb} />
+      <Banner title="Food Ordering Website - Pho Xic Lo" image={PhoWeb} />
       <Body>
         <Desc>
           <Links>
@@ -51,14 +51,23 @@ const PhoXicLo = () => {
           Admins have their own section where they can add more items to the
           menu, and update the orders.
           <br />
-          <br />I utilized NextJS to build this website, and storing data on
-          MongoDB.
+          <br />
+          <ul>
+            <li>
+              Created a front-end to display restaurant details, the menu and
+              allow users to purchases and track orders
+            </li>
+            <li>
+              Developed an admin page and the backend to allow updating and
+              storing of orders and menu items
+            </li>
+          </ul>
         </Desc>
         <Skills>
           <List>
             <li>Categories</li>
-            <li>Web / UI Design</li>
             <li>Web Development</li>
+            <li>Web / UI Design</li>
             <li>Branding</li>
             <li>Live Order</li>
           </List>
@@ -67,8 +76,8 @@ const PhoXicLo = () => {
             <li>HTML, CSS, JS</li>
             <li>NextJS, Redux</li>
             <li>NodeJS, Express </li>
-            <li>MongoDB, Mongoose</li>
-            <li>PayPal JS</li>
+            <li>MongoDB</li>
+            <li>PayPaljs</li>
             <li>Vercel</li>
             <li>VSCode</li>
           </List>

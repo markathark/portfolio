@@ -1,9 +1,9 @@
 import React from "react";
 import Intro from "../components/Intro";
 import Work from "../components/Work";
+import Designs from "../components/Designs";
 import { motion } from "framer-motion";
 import styled from "styled-components";
-import Designs from "../components/Designs";
 
 const Homepage = styled(motion.div)``;
 const Web = styled.div`
@@ -22,7 +22,7 @@ const Home = () => {
       <Web id="web">
         <Work />
       </Web>
-      <Web id="design">
+      <Web id="web">
         <Designs />
       </Web>
     </Homepage>

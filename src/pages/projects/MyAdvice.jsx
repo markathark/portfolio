@@ -18,7 +18,7 @@ import MyAdvice3 from "../../components/images/myadvice/myadvice_3.png";
 const MyAdvice = () => {
   return (
     <Wrapper>
-      <Banner title="MyAdvice" image={MyAdviceWeb} />
+      <Banner title="Open Platform Blog - MyAdvice" image={MyAdviceWeb} />
       <Body>
         <Desc>
           <Links>
@@ -48,15 +48,23 @@ const MyAdvice = () => {
           can browse around reading advise from different categories but also
           share their own advise on their individual expertise.
           <br />
-          <br />I developed the website with the MERN stack and designed a clean
-          brand and user interface for the website. The front end is developed
-          on React, and the backend is stored on MongoDB.
+          <br />
+          <ul>
+            <li>
+              Designed an interactive front-end that allow users to create, read
+              or interact with posts
+            </li>
+            <li>
+              Structured Schemas and API to allow CRUD operations for users,
+              posts, comments, likes, etc
+            </li>
+          </ul>
         </Desc>
         <Skills>
           <List>
             <li>Categories</li>
-            <li>Web / UI Design</li>
             <li>Web Development</li>
+            <li>Web / UI Design</li>
             <li>Branding</li>
             <li>Blog</li>
           </List>
@@ -65,8 +73,8 @@ const MyAdvice = () => {
             <li>HTML, CSS, JS</li>
             <li>React, Redux</li>
             <li>NodeJS, Express </li>
-            <li>MongoDB, Mongoose</li>
-            <li>Stripe</li>
+            <li>MongoDB</li>
+            <li>Stripejs</li>
             <li>Heroku</li>
             <li>VSCode</li>
           </List>

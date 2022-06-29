@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Image from "../components/images/logo.svg";
+import Resume from "../components/files/Mark_Ariola-Resume.pdf";
 
 const Wrapper = styled.div`
   display: flex;
@@ -43,6 +44,9 @@ const MenuLink = styled.li`
   position: relative;
   height: 8vh;
   align-items: center;
+  &.resume {
+    font-weight: normal;
+  }
 `;
 
 const Page = styled.span`
@@ -89,7 +93,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", changeBackground);
     };
-  }, [window.scrollY]);
+  }, []);
 
   return (
     <Wrapper className={navbar ? "active" : null}>
@@ -100,18 +104,18 @@ const Navbar = () => {
       <Menu>
         <MenuLink>
           <a href="/#web">
-            <Page>Web</Page>
+            <Page>Work</Page>
           </a>
         </MenuLink>
         <MenuLink>
-          <a href="/#design">
-            <Page>Design</Page>
-          </a>
-        </MenuLink>
-        <MenuLink>
-          <Link to="/about">
+          <a href="/about">
             <Page>About</Page>
-          </Link>
+          </a>
+        </MenuLink>
+        <MenuLink className="resume">
+          <a href={Resume} target="_blank" rel="noreferrer">
+            <Page>Resume</Page>
+          </a>
         </MenuLink>
       </Menu>
     </Wrapper>

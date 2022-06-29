@@ -51,9 +51,13 @@ const TheDailyMind = () => {
           calculating a budget or posting a simple note.
           <br />
           <br />
-          Utilizing React, I created simple programs that manage different
-          purposes. Keeping the design clean and simple makes for a good user
-          experience.
+          <ul>
+            <li>
+              Developed a web app containing different programs that organize
+              and track recurring tasks and activities such as journaling, to-do
+              lists, budgeting, etc.
+            </li>
+          </ul>
         </Desc>
         <Skills>
           <List>
@@ -65,6 +69,8 @@ const TheDailyMind = () => {
             <li>Tools</li>
             <li>HTML, CSS, JS</li>
             <li>React</li>
+            <li>Draggablejs</li>
+            <li>Heroku</li>
             <li>VSCode</li>
           </List>
         </Skills>
